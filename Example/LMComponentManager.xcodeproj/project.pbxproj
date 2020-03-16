@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35474239240C9F1500BE0203 /* LMModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 35474238240C9F1500BE0203 /* LMModuleA.m */; };
+		354D5C79241F168800427919 /* LMComponentAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D5C78241F168800427919 /* LMComponentAViewController.m */; };
+		354D5C7C241F171700427919 /* LMComponentBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D5C7B241F171700427919 /* LMComponentBViewController.m */; };
+		354D5C7F241F173600427919 /* LMComponentB.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D5C7E241F173600427919 /* LMComponentB.m */; };
+		354D5C82241F174000427919 /* LMComponentA.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D5C81241F174000427919 /* LMComponentA.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,9 +43,19 @@
 
 /* Begin PBXFileReference section */
 		130DE0C40256C756505E1327 /* Pods-LMComponentManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMComponentManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LMComponentManager_Tests/Pods-LMComponentManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		35474237240C9F1500BE0203 /* LMModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMModuleA.h; sourceTree = "<group>"; };
+		35474238240C9F1500BE0203 /* LMModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMModuleA.m; sourceTree = "<group>"; };
+		354D5C77241F168800427919 /* LMComponentAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMComponentAViewController.h; sourceTree = "<group>"; };
+		354D5C78241F168800427919 /* LMComponentAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMComponentAViewController.m; sourceTree = "<group>"; };
+		354D5C7A241F171700427919 /* LMComponentBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMComponentBViewController.h; sourceTree = "<group>"; };
+		354D5C7B241F171700427919 /* LMComponentBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMComponentBViewController.m; sourceTree = "<group>"; };
+		354D5C7D241F173600427919 /* LMComponentB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMComponentB.h; sourceTree = "<group>"; };
+		354D5C7E241F173600427919 /* LMComponentB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMComponentB.m; sourceTree = "<group>"; };
+		354D5C80241F174000427919 /* LMComponentA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMComponentA.h; sourceTree = "<group>"; };
+		354D5C81241F174000427919 /* LMComponentA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMComponentA.m; sourceTree = "<group>"; };
 		4E4E248F06BC52A5B7083967 /* Pods_LMComponentManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMComponentManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5309E4C5558C53ADF45DFF0B /* Pods_LMComponentManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMComponentManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57E83739D2F35C3C199AFC79 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		57E83739D2F35C3C199AFC79 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LMComponentManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMComponentManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,12 +76,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6B09C3D4074F5841D2653295 /* Pods-LMComponentManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMComponentManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-LMComponentManager_Tests/Pods-LMComponentManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6EDB7E05967AEF6C53CE9290 /* LMComponentManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LMComponentManager.podspec; path = ../LMComponentManager.podspec; sourceTree = "<group>"; };
+		6EDB7E05967AEF6C53CE9290 /* LMComponentManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LMComponentManager.podspec; path = ../LMComponentManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C4069CBE56D4B0645099EDB /* Pods-LMComponentManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMComponentManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-LMComponentManager_Example/Pods-LMComponentManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2EFE4FB6B30E13929F40B6 /* Pods-LMComponentManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMComponentManager_Example.release.xcconfig"; path = "Target Support Files/Pods-LMComponentManager_Example/Pods-LMComponentManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F122D3553934F178393D30A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F122D3553934F178393D30A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +110,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		354D5C75241F166700427919 /* ComponentA */ = {
+			isa = PBXGroup;
+			children = (
+				354D5C77241F168800427919 /* LMComponentAViewController.h */,
+				354D5C78241F168800427919 /* LMComponentAViewController.m */,
+				354D5C80241F174000427919 /* LMComponentA.h */,
+				354D5C81241F174000427919 /* LMComponentA.m */,
+			);
+			name = ComponentA;
+			sourceTree = "<group>";
+		};
+		354D5C76241F166E00427919 /* ComponentB */ = {
+			isa = PBXGroup;
+			children = (
+				354D5C7A241F171700427919 /* LMComponentBViewController.h */,
+				354D5C7B241F171700427919 /* LMComponentBViewController.m */,
+				354D5C7D241F173600427919 /* LMComponentB.h */,
+				354D5C7E241F173600427919 /* LMComponentB.m */,
+			);
+			name = ComponentB;
+			sourceTree = "<group>";
+		};
 		4920CC9E0AC4238B8661F17D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +140,6 @@
 				130DE0C40256C756505E1327 /* Pods-LMComponentManager_Tests.debug.xcconfig */,
 				6B09C3D4074F5841D2653295 /* Pods-LMComponentManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +180,8 @@
 		6003F593195388D20070C39A /* Example for LMComponentManager */ = {
 			isa = PBXGroup;
 			children = (
+				354D5C76241F166E00427919 /* ComponentB */,
+				354D5C75241F166700427919 /* ComponentA */,
 				6003F59C195388D20070C39A /* LMAppDelegate.h */,
 				6003F59D195388D20070C39A /* LMAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -152,6 +190,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				35474237240C9F1500BE0203 /* LMModuleA.h */,
+				35474238240C9F1500BE0203 /* LMModuleA.m */,
 			);
 			name = "Example for LMComponentManager";
 			path = LMComponentManager;
@@ -258,6 +298,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -364,9 +405,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354D5C7C241F171700427919 /* LMComponentBViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LMViewController.m in Sources */,
+				35474239240C9F1500BE0203 /* LMModuleA.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				354D5C79241F168800427919 /* LMComponentAViewController.m in Sources */,
+				354D5C82241F174000427919 /* LMComponentA.m in Sources */,
+				354D5C7F241F173600427919 /* LMComponentB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,16 @@
+PODS:
+  - LMComponentManager (0.1.0)
+
+DEPENDENCIES:
+  - LMComponentManager (from `../`)
+
+EXTERNAL SOURCES:
+  LMComponentManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LMComponentManager: 3ee4c9b42068eee8937fd51ab01797619feb00f2
+
+PODFILE CHECKSUM: cd9b6dc28d9a0c30d519791cc22cef1538467144
+
+COCOAPODS: 1.8.4

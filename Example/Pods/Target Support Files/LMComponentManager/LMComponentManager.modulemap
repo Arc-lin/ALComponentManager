@@ -1,0 +1,6 @@
+framework module LMComponentManager {
+  umbrella header "LMComponentManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
