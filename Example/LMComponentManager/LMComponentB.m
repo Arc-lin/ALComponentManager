@@ -18,6 +18,11 @@
 
 @implementation LMComponentB
 
++ (void)load
+{
+    NSLog(@"Component B Load");
+}
+
 - (instancetype)init
 {
     if (self = [super init]) {
