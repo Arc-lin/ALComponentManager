@@ -20,9 +20,13 @@ it, simply add the following line to your Podfile:
 pod 'LMComponentManager'
 ```
 
+## 介绍及使用
+
+[https://doc.linghit.io/web/#/22?page_id=1465](https://doc.linghit.io/web/#/22?page_id=1465)
+
 ## Author
 
-arclin@dankal.cn, linzhiyu@linghit.com
+linzhiyu@linghit.com
 
 ## License
 
