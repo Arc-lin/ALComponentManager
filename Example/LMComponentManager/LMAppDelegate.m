@@ -8,7 +8,7 @@
 
 #import "LMAppDelegate.h"
 #import <LMComponent.h>
-#import <LMTimeProfiler.h>
+#import <LMContext.h>
 #import <LMTimeProfiler.h>
 
 #import <UserNotifications/UserNotifications.h>
@@ -28,6 +28,13 @@
         [UNUserNotificationCenter currentNotificationCenter].delegate = self;
     }
 #endif
+    
+    [LMContext shareInstance].application = application;
+    [LMContext shareInstance].launchOptions = launchOptions;
+    [LMComponent shareInstance].enableException = YES;
+    [[LMComponent shareInstance] setContext:[LMContext shareInstance]];
+    [[LMTimeProfiler sharedTimeProfiler] recordEventTime:@"BeeHive::super start launch"];
+
     
 #ifdef DEBUG
     [[LMTimeProfiler sharedTimeProfiler] saveTimeProfileDataIntoFile:@"LMComponentTimeProfiler"];
