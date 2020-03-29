@@ -13,7 +13,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #include <mach-o/ldsyms.h>
-#import "LMComponentManager.h"
+#import "LMModuleManager.h"
 
 NSArray<NSString *>* LMReadConfiguration(char *sectionName,const struct mach_header *mhp);
 static void dyld_callback(const struct mach_header *mhp, intptr_t vmaddr_slide)
@@ -25,7 +25,7 @@ static void dyld_callback(const struct mach_header *mhp, intptr_t vmaddr_slide)
             cls = NSClassFromString(modName);
             
             if (cls) {
-                [[LMComponentManager sharedManager] registerDynamicModule:cls];
+                [[LMModuleManager sharedManager] registerDynamicModule:cls];
             }
         }
     }

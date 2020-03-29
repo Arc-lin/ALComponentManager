@@ -7,65 +7,30 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, LMComponentLevel)
-{
-    LMComponentBasic  = 0,
-    LMComponentNormal = 1
-};
-
-typedef NS_ENUM(NSInteger, LMComponentEventType)
-{
-    LMSetupEvent = 0,
-    LMInitEvent,
-//    LMTearDownEvent,
-    LMSplashEvent,
-    LMQuickActionEvent,
-    LMWillResignActiveEvent,
-    LMDidEnterBackgroundEvent,
-    LMWillEnterForegroundEvent,
-    LMDidBecomeActiveEvent,
-    LMWillTerminateEvent,
-    LMUnmountEvent,
-    LMOpenURLEvent,
-    LMDidReceiveMemoryWarningEvent,
-    LMDidFailToRegisterForRemoteNotificationsEvent,
-    LMDidRegisterForRemoteNotificationsEvent,
-    LMDidReceiveRemoteNotificationEvent,
-    LMDidReceiveLocalNotificationEvent,
-    LMWillPresentNotificationEvent,
-    LMDidReceiveNotificationResponseEvent,
-    LMWillContinueUserActivityEvent,
-    LMContinueUserActivityEvent,
-    LMDidFailToContinueUserActivityEvent,
-    LMDidUpdateUserActivityEvent,
-    LMHandleWatchKitExtensionRequestEvent,
-    LMDidCustomEvent = 1000
-};
+#import "LMComponentProtocol.h"
+#import "LMContext.h"
+#import "LMAppDelegate.h"
+#import "LMModuleManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LMComponentManager : NSObject
 
-+ (instancetype)sharedManager;
+//save application global context
+@property(nonatomic, strong) LMContext *context;
 
-- (void)registerDynamicModule:(Class)moduleClass;
+//@property (nonatomic, assign) BOOL enableException;
 
-- (void)registerDynamicModule:(Class)moduleClass
-       shouldTriggerInitEvent:(BOOL)shouldTriggerInitEvent;
++ (instancetype)shareInstance;
 
-- (void)unRegisterDynamicModule:(Class)moduleClass;
++ (void)registerDynamicModule:(Class) moduleClass;
 
-- (void)registedAllModules;
+//- (id)createService:(Protocol *)proto;
+//
+////Registration is recommended to use a static way
+//- (void)registerService:(Protocol *)proto service:(Class) serviceClass;
 
-- (void)registerCustomEvent:(NSInteger)eventType
-         withModuleInstance:(id)moduleInstance
-             andSelectorStr:(NSString *)selectorStr;
-
-- (void)triggerEvent:(NSInteger)eventType;
-
-- (void)triggerEvent:(NSInteger)eventType
-     withCustomParam:(NSDictionary *)customParam;
-
++ (void)triggerCustomEvent:(NSInteger)eventType;
 
 @end
 

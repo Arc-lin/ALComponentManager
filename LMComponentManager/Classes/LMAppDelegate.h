@@ -1,14 +1,19 @@
 //
-//  LMAppDelegateItem.h
+//  LMAppDelegate.h
 //  LMComponentManager
 //
-//  Created by Arclin on 2020/3/16.
+//  Created by Arclin on 2020/3/29.
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 100000
 #import <UserNotifications/UserNotifications.h>
 #endif
+
+@interface LMAppDelegate: UIResponder <UIApplicationDelegate>
+
+@end
 
 typedef void (^LMNotificationResultHandler)(UIBackgroundFetchResult);
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 100000

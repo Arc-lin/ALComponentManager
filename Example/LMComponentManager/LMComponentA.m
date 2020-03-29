@@ -33,7 +33,12 @@
 
 - (void)modSetUp:(LMContext *)context
 {
-    NSLog(@"ComponentA setup");
+    NSLog(@"Component A setup");
+}
+
+- (void)modDidBecomeActive:(LMContext *)context
+{
+    NSLog(@"Component A Become Active");
 }
 
 @end

@@ -8,7 +8,9 @@
 
 @import UIKit;
 
-@interface LMAppDelegate : UIResponder <UIApplicationDelegate>
+#import <LMComponentManager.h>
+
+@interface AppDelegate : LMAppDelegate <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

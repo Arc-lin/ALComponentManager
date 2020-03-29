@@ -1,18 +1,18 @@
 {
   "name": "LMComponentManager",
   "version": "0.1.0",
-  "summary": "A short description of LMComponentManager.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/arclin@dankal.cn/LMComponentManager",
+  "summary": "iOS AppDelegate事件分发组件",
+  "description": "iOS AppDelegate事件分发组件",
+  "homepage": "http://git.linghit.io:666/ios_cocoapods/LMComponentManager",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "arclin@dankal.cn": "linzhiyu@linghit.com"
+    "linxi": "linzhiyu@linghit.com"
   },
   "source": {
-    "git": "https://github.com/arclin@dankal.cn/LMComponentManager.git",
+    "git": "http://git.linghit.io:666/ios_cocoapods/LMComponentManager.git",
     "tag": "0.1.0"
   },
   "platforms": {

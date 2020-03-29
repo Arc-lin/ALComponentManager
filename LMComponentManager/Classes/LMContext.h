@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LMAppDelegateItem.h"
+#import "LMAppDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -11,11 +11,11 @@
 #endif
 
 #import "LMAnnotation.h"
-#import "LMAppDelegateItem.h"
-#import "LMComponent.h"
+#import "LMAppDelegate.h"
 #import "LMComponentManager.h"
 #import "LMComponentProtocol.h"
 #import "LMContext.h"
+#import "LMModuleManager.h"
 #import "LMTimeProfiler.h"
 
 FOUNDATION_EXPORT double LMComponentManagerVersionNumber;

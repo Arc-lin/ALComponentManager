@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		142ED87BA831695B1C2CFACDC1B46931 /* LMTimeProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = E5609D63A7F9E8604DCA4467CEC28271 /* LMTimeProfiler.m */; };
-		15395E917B33D2D562FC148392802742 /* LMComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5679E5103870700D0AD7E32873B5EA5B /* LMComponentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		223A4A285ED7CEBEA062FB5A9B885069 /* LMComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F78D2C941C08ECA0725FDAD4EAAA350 /* LMComponentManager.m */; };
-		355C9B0F897C82EBB9F4679A4EAA13C5 /* LMAppDelegateItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5327482AA57CBEB3AE62F095D97C63D8 /* LMAppDelegateItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		547B4E95C428E7C07B8D0CB98AC8143E /* LMComponentManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC819C82535C81CFB28D51CA2D56E0C /* LMComponentManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54B99AFF0A2A6A2CD222C097AF210367 /* LMComponentManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B409A4B5E38533203CBDB3BF1F80A797 /* LMComponentManager-dummy.m */; };
+		0178C22B29E38307BB5ACF1DAE38A28E /* LMContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB82DFF56A2A46DCA42F9252AF9CC41 /* LMContext.m */; };
+		1D3CA940626E25723858288259A549F5 /* LMComponentManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825E0A8600E3C8BDB8D15A9D15524A3 /* LMComponentManager-dummy.m */; };
+		4BD4B813B0314BC97DDB4E7420FCF575 /* LMComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FE9DB349BB65293E5DB51CB3F5FBDC /* LMComponentManager.m */; };
 		56EB050A0120014FC28810FFA5DCB081 /* Pods-LMComponentManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E77C8E59451F830955EFC7E96A8788DF /* Pods-LMComponentManager_Tests-dummy.m */; };
-		5EA0CA015C7A79E1B94FBDC6210333EC /* LMTimeProfiler.h in Headers */ = {isa = PBXBuildFile; fileRef = CE75094E8B808B17EFAE245D14D427F9 /* LMTimeProfiler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E86BF614271037F9CC73B9094EE2E50 /* LMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9761C391F01D00C9249EFC633632374 /* LMAppDelegate.m */; };
+		62B716C2FC7327AF51AA085242D424B2 /* LMModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FBB73DCD3E92D4D7D11D410D751C725 /* LMModuleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DF5D7BD425D99247982DB09B2475646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7163B4D3E1E0D30D7185654E7B853A9D /* LMComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F3721C827CAE913E35C4CD24A6E03DF2 /* LMComponent.m */; };
-		717A448A23422B55A54C3303BED01D66 /* LMContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1381C2007D226CCEABC617F92722296E /* LMContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75AAF9E68D727C40C791477E76713EAB /* Pods-LMComponentManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C64F6DAA95687D0190995BF2A41354A6 /* Pods-LMComponentManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7612EC50F6B2B6ACAE8AA8E981E3082B /* LMContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D4A82140BD821B608BB50A6EF39F30F /* LMContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78726DE7B4E1DCCD93840B14BA57D65D /* Pods-LMComponentManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F77A46B704F70FA67752B62D9DBC21 /* Pods-LMComponentManager_Example-dummy.m */; };
-		8F09319C7E2D39CD2D502E2B6C556B11 /* LMComponentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DF6B1BEF84BB4B0FF69B98333BF2D69B /* LMComponentProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93FCC94ABC0B1A805D68F91234366E3F /* LMAppDelegateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 21955FBA20B3C3A48F7F0DD3D2D2854D /* LMAppDelegateItem.m */; };
-		A0323EEBBB9BD559D1E39965EC994C24 /* LMComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 13DD719B4015B30942F1E59B4F22FB58 /* LMComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7ACD3312883E8EE25C5F1AE238B83FC /* LMAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A874AACC18E600753430FA27F43A538 /* LMAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81263207A4BFEE1F7C353601535F75A4 /* LMAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A8FA99B594CA30FC7EB766EDCCB01 /* LMAnnotation.m */; };
+		9A537F66167C237058490918F3DD4FA7 /* LMComponentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A6800317E651EC3D1E736FBA28CB2C29 /* LMComponentProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D9E6E87875333E0533CFB4418CCB73C /* LMTimeProfiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 57668CF62C41F5A9C5AC03ED12486EEB /* LMTimeProfiler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A68BE3F7BD1DFAC2696A43DB003F9010 /* LMComponentManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04404F3639A366A05B66AA55A92B8DB1 /* LMComponentManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0BF58AA28249EE63E10BD00231302D5 /* LMTimeProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = B883C85BFDC4475A13829A964C0FE0A3 /* LMTimeProfiler.m */; };
+		D373DD8BED0C74DF3542A19DBE8F1540 /* LMAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 69F1F1E0BE9D4795C3A5D1C5CC4FD963 /* LMAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9F38D68FAFA3AC40248E62589EEA4EC /* Pods-LMComponentManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F048C243D33ACA501DBC50B16DE67C /* Pods-LMComponentManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA0FE3E8D4F7C5B95BCD6BC819830E1B /* LMAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF8CE4DFB4311F6669F2474B82F727 /* LMAnnotation.m */; };
+		DDC90E1ABE5677070369630A950B1B36 /* LMComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F531281B4A4E80B183752ECE6C262A9 /* LMComponentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0C349A1CABE5B90D32C10F657F1E5FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		EB11200E858B38F7B2F7BC4B06406AF8 /* LMContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C21930D33927D9902AA9EA30D3575392 /* LMContext.m */; };
+		F66B1094E314FDE869368D27A9BB899D /* LMModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA462D409C6FD94D9F3C36CA456E843 /* LMModuleManager.m */; };
+		FD83C142E378E870A4F58AC8C0FB5339 /* LMAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 881BADDCF6BF1B250B6B58816CAE91B6 /* LMAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF5F1295B318E466C6A6CFB3F1FAAC20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,49 +50,49 @@
 
 /* Begin PBXFileReference section */
 		03425ECD43326A2F61623F04921A24AD /* Pods-LMComponentManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMComponentManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		04404F3639A366A05B66AA55A92B8DB1 /* LMComponentManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMComponentManager-umbrella.h"; sourceTree = "<group>"; };
+		0A03042C6543EA9E48E0301482E320C9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		0DD6487BEECBB5CA4201BC9C1A209F00 /* Pods-LMComponentManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMComponentManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1381C2007D226CCEABC617F92722296E /* LMContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMContext.h; path = LMComponentManager/Classes/LMContext.h; sourceTree = "<group>"; };
-		13DD719B4015B30942F1E59B4F22FB58 /* LMComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMComponent.h; path = LMComponentManager/Classes/LMComponent.h; sourceTree = "<group>"; };
 		1D4A8CB66D53A7F513C857B3CFCDF703 /* Pods-LMComponentManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LMComponentManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		21955FBA20B3C3A48F7F0DD3D2D2854D /* LMAppDelegateItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAppDelegateItem.m; path = LMComponentManager/Classes/LMAppDelegateItem.m; sourceTree = "<group>"; };
+		1FA462D409C6FD94D9F3C36CA456E843 /* LMModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMModuleManager.m; path = LMComponentManager/Classes/LMModuleManager.m; sourceTree = "<group>"; };
 		2B36DF87B8234FFCB08844EB1EEA562C /* Pods_LMComponentManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LMComponentManager_Tests.framework; path = "Pods-LMComponentManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EDF8CE4DFB4311F6669F2474B82F727 /* LMAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAnnotation.m; path = LMComponentManager/Classes/LMAnnotation.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		39D79F9CA32E5B263DA542F39C86A017 /* Pods-LMComponentManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LMComponentManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B0A36606DB746949376D37A5DFC24A9 /* LMComponentManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMComponentManager-prefix.pch"; sourceTree = "<group>"; };
 		43F77A46B704F70FA67752B62D9DBC21 /* Pods-LMComponentManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LMComponentManager_Example-dummy.m"; sourceTree = "<group>"; };
-		5327482AA57CBEB3AE62F095D97C63D8 /* LMAppDelegateItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAppDelegateItem.h; path = LMComponentManager/Classes/LMAppDelegateItem.h; sourceTree = "<group>"; };
-		5679E5103870700D0AD7E32873B5EA5B /* LMComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMComponentManager.h; path = LMComponentManager/Classes/LMComponentManager.h; sourceTree = "<group>"; };
-		647C3FCB6BF2D2A6A94BFA0800740FBF /* LMComponentManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LMComponentManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4825E0A8600E3C8BDB8D15A9D15524A3 /* LMComponentManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMComponentManager-dummy.m"; sourceTree = "<group>"; };
+		4C755B62A0967A934029B14BC2133AD3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		57668CF62C41F5A9C5AC03ED12486EEB /* LMTimeProfiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMTimeProfiler.h; path = LMComponentManager/Classes/LMTimeProfiler.h; sourceTree = "<group>"; };
+		5FBB73DCD3E92D4D7D11D410D751C725 /* LMModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMModuleManager.h; path = LMComponentManager/Classes/LMModuleManager.h; sourceTree = "<group>"; };
+		60FE9DB349BB65293E5DB51CB3F5FBDC /* LMComponentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMComponentManager.m; path = LMComponentManager/Classes/LMComponentManager.m; sourceTree = "<group>"; };
 		66FAE77E896029039230F26F68BEC071 /* LMComponentManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LMComponentManager.framework; path = LMComponentManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B53A9EBB8800A128C4072778A312752 /* LMComponentManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LMComponentManager-Info.plist"; sourceTree = "<group>"; };
-		8A874AACC18E600753430FA27F43A538 /* LMAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAnnotation.h; path = LMComponentManager/Classes/LMAnnotation.h; sourceTree = "<group>"; };
-		9ADA310000B6B12690C0B82D0CF92F8B /* LMComponentManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LMComponentManager.modulemap; sourceTree = "<group>"; };
+		69F1F1E0BE9D4795C3A5D1C5CC4FD963 /* LMAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAnnotation.h; path = LMComponentManager/Classes/LMAnnotation.h; sourceTree = "<group>"; };
+		766641EF99C90E00F01F27D72C568AE4 /* LMComponentManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LMComponentManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7AB82DFF56A2A46DCA42F9252AF9CC41 /* LMContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMContext.m; path = LMComponentManager/Classes/LMContext.m; sourceTree = "<group>"; };
+		881BADDCF6BF1B250B6B58816CAE91B6 /* LMAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAppDelegate.h; path = LMComponentManager/Classes/LMAppDelegate.h; sourceTree = "<group>"; };
+		8D4A82140BD821B608BB50A6EF39F30F /* LMContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMContext.h; path = LMComponentManager/Classes/LMContext.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F78D2C941C08ECA0725FDAD4EAAA350 /* LMComponentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMComponentManager.m; path = LMComponentManager/Classes/LMComponentManager.m; sourceTree = "<group>"; };
+		9F531281B4A4E80B183752ECE6C262A9 /* LMComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMComponentManager.h; path = LMComponentManager/Classes/LMComponentManager.h; sourceTree = "<group>"; };
+		A3101B8C5AE60FD5E72E6A190B7814E8 /* LMComponentManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LMComponentManager-Info.plist"; sourceTree = "<group>"; };
+		A63A8FA99B594CA30FC7EB766EDCCB01 /* LMAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAnnotation.m; path = LMComponentManager/Classes/LMAnnotation.m; sourceTree = "<group>"; };
+		A6800317E651EC3D1E736FBA28CB2C29 /* LMComponentProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMComponentProtocol.h; path = LMComponentManager/Classes/LMComponentProtocol.h; sourceTree = "<group>"; };
 		A8850C2F4E62851C514F6DE71CAF9C81 /* Pods-LMComponentManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMComponentManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE90CD81DACC843812D35A077548B626 /* LMComponentManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LMComponentManager.xcconfig; sourceTree = "<group>"; };
 		B2E280B3605A648263FC826B388CDB6F /* Pods_LMComponentManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LMComponentManager_Example.framework; path = "Pods-LMComponentManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B409A4B5E38533203CBDB3BF1F80A797 /* LMComponentManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMComponentManager-dummy.m"; sourceTree = "<group>"; };
+		B883C85BFDC4475A13829A964C0FE0A3 /* LMTimeProfiler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMTimeProfiler.m; path = LMComponentManager/Classes/LMTimeProfiler.m; sourceTree = "<group>"; };
 		B9E1B37F5148A7A73B3C2BF249CBE45A /* Pods-LMComponentManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LMComponentManager_Tests-Info.plist"; sourceTree = "<group>"; };
 		BD160DBCA1836EE1852B9B76710C077A /* Pods-LMComponentManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LMComponentManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C21930D33927D9902AA9EA30D3575392 /* LMContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMContext.m; path = LMComponentManager/Classes/LMContext.m; sourceTree = "<group>"; };
 		C64F6DAA95687D0190995BF2A41354A6 /* Pods-LMComponentManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LMComponentManager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		CE75094E8B808B17EFAE245D14D427F9 /* LMTimeProfiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMTimeProfiler.h; path = LMComponentManager/Classes/LMTimeProfiler.h; sourceTree = "<group>"; };
-		CF9FE9F4E448901A24F7AB4A7FCD59DA /* LMComponentManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMComponentManager-prefix.pch"; sourceTree = "<group>"; };
+		C75ED9C66D03B3AD10D78D553A85F5B0 /* LMComponentManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LMComponentManager.modulemap; sourceTree = "<group>"; };
 		D04A622290D12978EE871C345FC5824C /* Pods-LMComponentManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LMComponentManager_Tests.modulemap"; sourceTree = "<group>"; };
 		D5D0D85B6A6F6DF03C23A7A8D3635F4A /* Pods-LMComponentManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LMComponentManager_Example-Info.plist"; sourceTree = "<group>"; };
 		D87467C4D5EEDD45433C10BBFB687511 /* Pods-LMComponentManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LMComponentManager_Example.modulemap"; sourceTree = "<group>"; };
 		D9F048C243D33ACA501DBC50B16DE67C /* Pods-LMComponentManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LMComponentManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		DA7782F5CF00C31B96FCE213B6C6F00F /* Pods-LMComponentManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LMComponentManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DA8FE64FA1C374635134847A1181A264 /* LMComponentManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LMComponentManager.xcconfig; sourceTree = "<group>"; };
 		DBEA8C89BEF8513353368C5E364B9793 /* Pods-LMComponentManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LMComponentManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		DC9083CEBE11E1567D3EBD9B0849D221 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		DCF8C95AF72F4D1CB77640113313B163 /* Pods-LMComponentManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LMComponentManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF6B1BEF84BB4B0FF69B98333BF2D69B /* LMComponentProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMComponentProtocol.h; path = LMComponentManager/Classes/LMComponentProtocol.h; sourceTree = "<group>"; };
-		DFC819C82535C81CFB28D51CA2D56E0C /* LMComponentManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMComponentManager-umbrella.h"; sourceTree = "<group>"; };
-		E5609D63A7F9E8604DCA4467CEC28271 /* LMTimeProfiler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMTimeProfiler.m; path = LMComponentManager/Classes/LMTimeProfiler.m; sourceTree = "<group>"; };
 		E77C8E59451F830955EFC7E96A8788DF /* Pods-LMComponentManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LMComponentManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		F3721C827CAE913E35C4CD24A6E03DF2 /* LMComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMComponent.m; path = LMComponentManager/Classes/LMComponent.m; sourceTree = "<group>"; };
-		FEBC97C7CE92FEE775CFEAC8D7A67E2F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F9761C391F01D00C9249EFC633632374 /* LMAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAppDelegate.m; path = LMComponentManager/Classes/LMAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,22 +140,22 @@
 			path = "Target Support Files/Pods-LMComponentManager_Example";
 			sourceTree = "<group>";
 		};
-		44801B612D668E471F25EA7DB29548EA /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				DC9083CEBE11E1567D3EBD9B0849D221 /* LICENSE */,
-				647C3FCB6BF2D2A6A94BFA0800740FBF /* LMComponentManager.podspec */,
-				FEBC97C7CE92FEE775CFEAC8D7A67E2F /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		748A52DC05595EB39B562E94DCBF89C2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FC0D0F149AD953B8238DCD9FAA228AC2 /* LMComponentManager */,
+				A46A788DD7CA0EF8DAB247F9FDB9070B /* LMComponentManager */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		827F69E5796909EC0B18D6543AD7645E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4C755B62A0967A934029B14BC2133AD3 /* LICENSE */,
+				766641EF99C90E00F01F27D72C568AE4 /* LMComponentManager.podspec */,
+				0A03042C6543EA9E48E0301482E320C9 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		86D18870D6F4649983DEE705FBFE8A92 /* Products */ = {
@@ -177,26 +177,49 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		A46A788DD7CA0EF8DAB247F9FDB9070B /* LMComponentManager */ = {
+			isa = PBXGroup;
+			children = (
+				69F1F1E0BE9D4795C3A5D1C5CC4FD963 /* LMAnnotation.h */,
+				A63A8FA99B594CA30FC7EB766EDCCB01 /* LMAnnotation.m */,
+				881BADDCF6BF1B250B6B58816CAE91B6 /* LMAppDelegate.h */,
+				F9761C391F01D00C9249EFC633632374 /* LMAppDelegate.m */,
+				9F531281B4A4E80B183752ECE6C262A9 /* LMComponentManager.h */,
+				60FE9DB349BB65293E5DB51CB3F5FBDC /* LMComponentManager.m */,
+				A6800317E651EC3D1E736FBA28CB2C29 /* LMComponentProtocol.h */,
+				8D4A82140BD821B608BB50A6EF39F30F /* LMContext.h */,
+				7AB82DFF56A2A46DCA42F9252AF9CC41 /* LMContext.m */,
+				5FBB73DCD3E92D4D7D11D410D751C725 /* LMModuleManager.h */,
+				1FA462D409C6FD94D9F3C36CA456E843 /* LMModuleManager.m */,
+				57668CF62C41F5A9C5AC03ED12486EEB /* LMTimeProfiler.h */,
+				B883C85BFDC4475A13829A964C0FE0A3 /* LMTimeProfiler.m */,
+				827F69E5796909EC0B18D6543AD7645E /* Pod */,
+				AC515B6B4C5B3620CDF6EDCDC357949F /* Support Files */,
+			);
+			name = LMComponentManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AC515B6B4C5B3620CDF6EDCDC357949F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C75ED9C66D03B3AD10D78D553A85F5B0 /* LMComponentManager.modulemap */,
+				AE90CD81DACC843812D35A077548B626 /* LMComponentManager.xcconfig */,
+				4825E0A8600E3C8BDB8D15A9D15524A3 /* LMComponentManager-dummy.m */,
+				A3101B8C5AE60FD5E72E6A190B7814E8 /* LMComponentManager-Info.plist */,
+				3B0A36606DB746949376D37A5DFC24A9 /* LMComponentManager-prefix.pch */,
+				04404F3639A366A05B66AA55A92B8DB1 /* LMComponentManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LMComponentManager";
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		CD98D6BA6EE48DC5B54EC315182478BE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9ADA310000B6B12690C0B82D0CF92F8B /* LMComponentManager.modulemap */,
-				DA8FE64FA1C374635134847A1181A264 /* LMComponentManager.xcconfig */,
-				B409A4B5E38533203CBDB3BF1F80A797 /* LMComponentManager-dummy.m */,
-				6B53A9EBB8800A128C4072778A312752 /* LMComponentManager-Info.plist */,
-				CF9FE9F4E448901A24F7AB4A7FCD59DA /* LMComponentManager-prefix.pch */,
-				DFC819C82535C81CFB28D51CA2D56E0C /* LMComponentManager-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LMComponentManager";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -234,29 +257,6 @@
 			path = "Target Support Files/Pods-LMComponentManager_Tests";
 			sourceTree = "<group>";
 		};
-		FC0D0F149AD953B8238DCD9FAA228AC2 /* LMComponentManager */ = {
-			isa = PBXGroup;
-			children = (
-				8A874AACC18E600753430FA27F43A538 /* LMAnnotation.h */,
-				2EDF8CE4DFB4311F6669F2474B82F727 /* LMAnnotation.m */,
-				5327482AA57CBEB3AE62F095D97C63D8 /* LMAppDelegateItem.h */,
-				21955FBA20B3C3A48F7F0DD3D2D2854D /* LMAppDelegateItem.m */,
-				13DD719B4015B30942F1E59B4F22FB58 /* LMComponent.h */,
-				F3721C827CAE913E35C4CD24A6E03DF2 /* LMComponent.m */,
-				5679E5103870700D0AD7E32873B5EA5B /* LMComponentManager.h */,
-				9F78D2C941C08ECA0725FDAD4EAAA350 /* LMComponentManager.m */,
-				DF6B1BEF84BB4B0FF69B98333BF2D69B /* LMComponentProtocol.h */,
-				1381C2007D226CCEABC617F92722296E /* LMContext.h */,
-				C21930D33927D9902AA9EA30D3575392 /* LMContext.m */,
-				CE75094E8B808B17EFAE245D14D427F9 /* LMTimeProfiler.h */,
-				E5609D63A7F9E8604DCA4467CEC28271 /* LMTimeProfiler.m */,
-				44801B612D668E471F25EA7DB29548EA /* Pod */,
-				CD98D6BA6EE48DC5B54EC315182478BE /* Support Files */,
-			);
-			name = LMComponentManager;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -268,18 +268,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D4F8029676A7EBF5E6839267E666A70 /* Headers */ = {
+		B28C064391E31876C9B076CF312A58E2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7ACD3312883E8EE25C5F1AE238B83FC /* LMAnnotation.h in Headers */,
-				355C9B0F897C82EBB9F4679A4EAA13C5 /* LMAppDelegateItem.h in Headers */,
-				A0323EEBBB9BD559D1E39965EC994C24 /* LMComponent.h in Headers */,
-				547B4E95C428E7C07B8D0CB98AC8143E /* LMComponentManager-umbrella.h in Headers */,
-				15395E917B33D2D562FC148392802742 /* LMComponentManager.h in Headers */,
-				8F09319C7E2D39CD2D502E2B6C556B11 /* LMComponentProtocol.h in Headers */,
-				717A448A23422B55A54C3303BED01D66 /* LMContext.h in Headers */,
-				5EA0CA015C7A79E1B94FBDC6210333EC /* LMTimeProfiler.h in Headers */,
+				D373DD8BED0C74DF3542A19DBE8F1540 /* LMAnnotation.h in Headers */,
+				FD83C142E378E870A4F58AC8C0FB5339 /* LMAppDelegate.h in Headers */,
+				A68BE3F7BD1DFAC2696A43DB003F9010 /* LMComponentManager-umbrella.h in Headers */,
+				DDC90E1ABE5677070369630A950B1B36 /* LMComponentManager.h in Headers */,
+				9A537F66167C237058490918F3DD4FA7 /* LMComponentProtocol.h in Headers */,
+				7612EC50F6B2B6ACAE8AA8E981E3082B /* LMContext.h in Headers */,
+				62B716C2FC7327AF51AA085242D424B2 /* LMModuleManager.h in Headers */,
+				9D9E6E87875333E0533CFB4418CCB73C /* LMTimeProfiler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +298,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06D8E84B5A2D3D07EF3E3860E000507B /* Build configuration list for PBXNativeTarget "LMComponentManager" */;
 			buildPhases = (
-				6D4F8029676A7EBF5E6839267E666A70 /* Headers */,
-				3F995A63CEEE689527CBAB7EA3013614 /* Sources */,
+				B28C064391E31876C9B076CF312A58E2 /* Headers */,
+				BFBA4F7A78241B23DE1792C5AD204D0E /* Sources */,
 				536D5DEBEAC900D6862B11F9436FE7DE /* Frameworks */,
 				141E478BB196E86816DAA903671C2966 /* Resources */,
 			);
@@ -404,25 +404,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F995A63CEEE689527CBAB7EA3013614 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA0FE3E8D4F7C5B95BCD6BC819830E1B /* LMAnnotation.m in Sources */,
-				93FCC94ABC0B1A805D68F91234366E3F /* LMAppDelegateItem.m in Sources */,
-				7163B4D3E1E0D30D7185654E7B853A9D /* LMComponent.m in Sources */,
-				54B99AFF0A2A6A2CD222C097AF210367 /* LMComponentManager-dummy.m in Sources */,
-				223A4A285ED7CEBEA062FB5A9B885069 /* LMComponentManager.m in Sources */,
-				EB11200E858B38F7B2F7BC4B06406AF8 /* LMContext.m in Sources */,
-				142ED87BA831695B1C2CFACDC1B46931 /* LMTimeProfiler.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		62FC6E1AE4C0190F63BCDF271727CD8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				78726DE7B4E1DCCD93840B14BA57D65D /* Pods-LMComponentManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBA4F7A78241B23DE1792C5AD204D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81263207A4BFEE1F7C353601535F75A4 /* LMAnnotation.m in Sources */,
+				5E86BF614271037F9CC73B9094EE2E50 /* LMAppDelegate.m in Sources */,
+				1D3CA940626E25723858288259A549F5 /* LMComponentManager-dummy.m in Sources */,
+				4BD4B813B0314BC97DDB4E7420FCF575 /* LMComponentManager.m in Sources */,
+				0178C22B29E38307BB5ACF1DAE38A28E /* LMContext.m in Sources */,
+				F66B1094E314FDE869368D27A9BB899D /* LMModuleManager.m in Sources */,
+				C0BF58AA28249EE63E10BD00231302D5 /* LMTimeProfiler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +454,7 @@
 /* Begin XCBuildConfiguration section */
 		3CC922B8785B58BFE32A2256F06EB89D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA8FE64FA1C374635134847A1181A264 /* LMComponentManager.xcconfig */;
+			baseConfigurationReference = AE90CD81DACC843812D35A077548B626 /* LMComponentManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -644,7 +644,7 @@
 		};
 		8035305F463F323DE14734C4C32E9AF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA8FE64FA1C374635134847A1181A264 /* LMComponentManager.xcconfig */;
+			baseConfigurationReference = AE90CD81DACC843812D35A077548B626 /* LMComponentManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
