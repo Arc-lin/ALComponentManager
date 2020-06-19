@@ -26,11 +26,11 @@
     [LMContext shareInstance].application = application;
     [LMContext shareInstance].launchOptions = launchOptions;
     
-//    [LMComponentManager shareInstance].enableException = YES;
     [[LMComponentManager shareInstance] setContext:[LMContext shareInstance]];
+#ifdef DEBUG
     [[LMTimeProfiler sharedTimeProfiler] recordEventTime:@"BeeHive::super start launch"];
+#endif
 
-    
     [super application:application didFinishLaunchingWithOptions:launchOptions];
     
 

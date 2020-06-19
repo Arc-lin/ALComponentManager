@@ -7,6 +7,7 @@
 
 #ifndef LMComponentProtocol_h
 #define LMComponentProtocol_h
+#import "LMAnnotation.h"
 
 @class LMContext;
 
