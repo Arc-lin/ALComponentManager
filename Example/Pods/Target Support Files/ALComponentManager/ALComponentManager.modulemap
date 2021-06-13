@@ -1,0 +1,6 @@
+framework module ALComponentManager {
+  umbrella header "ALComponentManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
