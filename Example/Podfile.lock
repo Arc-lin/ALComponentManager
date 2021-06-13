@@ -1,16 +1,16 @@
 PODS:
-  - LMComponentManager (0.1.0)
+  - ALComponentManager (0.1.0)
 
 DEPENDENCIES:
-  - LMComponentManager (from `../`)
+  - ALComponentManager (from `../`)
 
 EXTERNAL SOURCES:
-  LMComponentManager:
+  ALComponentManager:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LMComponentManager: d57b455ced92988bc3617c74a39b02399de862dc
+  ALComponentManager: 761f8085b2b76a9368e1bedad4adbe30dbca6aaf
 
-PODFILE CHECKSUM: cd9b6dc28d9a0c30d519791cc22cef1538467144
+PODFILE CHECKSUM: 6c0b9901b0f5dde5b4b119531d6f3a18bc681586
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1

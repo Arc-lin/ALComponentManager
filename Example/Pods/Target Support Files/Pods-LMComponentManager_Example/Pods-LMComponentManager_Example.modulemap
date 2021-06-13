@@ -1,6 +1,0 @@
-framework module Pods_LMComponentManager_Example {
-  umbrella header "Pods-LMComponentManager_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

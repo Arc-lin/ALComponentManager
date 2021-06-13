@@ -1,6 +1,0 @@
-framework module Pods_LMComponentManager_Tests {
-  umbrella header "Pods-LMComponentManager_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

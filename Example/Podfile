@@ -1,11 +1,11 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 
-target 'LMComponentManager_Example' do
-  pod 'LMComponentManager', :path => '../'
+target 'ALComponentManager_Example' do
+  pod 'ALComponentManager', :path => '../'
 
-  target 'LMComponentManager_Tests' do
+  target 'ALComponentManager_Tests' do
     inherit! :search_paths
 
     

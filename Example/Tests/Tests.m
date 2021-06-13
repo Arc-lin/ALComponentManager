@@ -1,9 +1,9 @@
 //
-//  LMComponentManagerTests.m
-//  LMComponentManagerTests
+//  ALComponentManagerTests.m
+//  ALComponentManagerTests
 //
-//  Created by arclin@dankal.cn on 02/28/2020.
-//  Copyright (c) 2020 arclin@dankal.cn. All rights reserved.
+//  Created by arclin325@gmail.com on 06/13/2021.
+//  Copyright (c) 2021 arclin325@gmail.com. All rights reserved.
 //
 
 @import XCTest;

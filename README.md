@@ -1,33 +1,94 @@
-# LMComponentManager
+# ALComponentManager
 
-[![CI Status](https://img.shields.io/travis/arclin@dankal.cn/LMComponentManager.svg?style=flat)](https://travis-ci.org/arclin@dankal.cn/LMComponentManager)
-[![Version](https://img.shields.io/cocoapods/v/LMComponentManager.svg?style=flat)](https://cocoapods.org/pods/LMComponentManager)
-[![License](https://img.shields.io/cocoapods/l/LMComponentManager.svg?style=flat)](https://cocoapods.org/pods/LMComponentManager)
-[![Platform](https://img.shields.io/cocoapods/p/LMComponentManager.svg?style=flat)](https://cocoapods.org/pods/LMComponentManager)
+当我们的组件化工程越来越大的时候，组件越来越多，AppDelegate的代码量也会越来越多，所以我们需要一个方法去管理AppDelegate里面的组件注册等其他相关工作
 
-## Example
+## Cocoapods安装
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-LMComponentManager is available through [CocoaPods](https://cocoapods.org). To install
+ALComponentManager is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'LMComponentManager'
+pod 'ALComponentManager'
 ```
 
-## 介绍及使用
+## 使用方法
 
-[https://doc.linghit.io/web/#/22?page_id=1465](https://doc.linghit.io/web/#/22?page_id=1465)
+相关内容可以阅读[文档](https://blog.arclin.cn/post/7e5c9fa9.html)
+
+接下来举例说明
+
+1. AppDelegate继承自`ALAppDelegate`，然后相关的代理方法里面在第一行调用super方法.
+
+2. 在AppDelegate做分发埋点，
+	
+	如`- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions`
+	
+	埋点如下
+	
+	```
+	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+	{
+		[[ALComponentManager sharedManager] triggerEvent:ALSetupEvent];
+		[[ALComponentManager sharedManager] triggerEvent:ALInitEvent];
+
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[[ALComponentManager sharedManager] triggerEvent:ALSplashEvent];
+		});
+		
+		return YES;
+	}
+
+	```
+	
+	其他埋点见组件Demo
+	
+3. 给每个组件创建一个类并写上注解，如`ALComponentA.m`
+
+	```
+	@ALMod(ALComponentA);
+	@interface ALComponentA()<ALComponentProtocol>
+
+	@end
+
+	@implementation ALComponentA
+
+	@end
+	```
+	
+4. 实现协议`ALComponentProtocol`和需要的协议方法。
+	这个协议里面蕴含了基本所有的`AppDelegate`方法，当然要触发这些方法都是要预先在AppDelegate写上埋点。
+	
+	```
+	@implementation ALComponentA
+
+	+ (void)load
+	{
+		NSLog(@"Component A Load");    
+	}
+
+	- (instancetype)init
+	{
+		if (self = [super init]) {
+			NSLog(@"ComponentA Init");
+		}
+		return self;
+	}
+
+	- (void)modSetUp:(ALContext *)context
+	{
+		NSLog(@"ComponentA setup");
+	}
+
+	@end
+	```
+	
+4. 接下来你就可以尝试使用了。
+
 
 ## Author
 
-linzhiyu@linghit.com
+arclin325@gmail.com
 
 ## License
 
-LMComponentManager is available under the MIT license. See the LICENSE file for more info.
+ALComponentManager is available under the MIT license. See the LICENSE file for more info.
