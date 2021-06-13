@@ -15,34 +15,62 @@ pod 'ALComponentManager'
 
 相关内容可以阅读[文档](https://blog.arclin.cn/post/7e5c9fa9.html)
 
-接下来举例说明
+### 使用方法
 
-1. AppDelegate继承自`ALAppDelegate`，然后相关的代理方法里面在第一行调用super方法.
+#### AppDelegate继承自ALAppDelegate
 
-2. 在AppDelegate做分发埋点，
-	
-	如`- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions`
-	
-	埋点如下
-	
-	```
-	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-	{
-		[[ALComponentManager sharedManager] triggerEvent:ALSetupEvent];
-		[[ALComponentManager sharedManager] triggerEvent:ALInitEvent];
+只需要在实现`UIApplicationDelegate`的方法内部调用super方法即可，如
 
-		dispatch_async(dispatch_get_main_queue(), ^{
-			[[ALComponentManager sharedManager] triggerEvent:ALSplashEvent];
-		});
-		
-		return YES;
-	}
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [super application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    return YES;
+}
 
-	```
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    [super applicationWillResignActive:application];
+}
+
+```
+
+#### AppDelegate继承自UIResponder
+
+在AppDelegate的各个方法做分发埋点，触发到埋点后事件会分发到各个组件类里面
 	
-	其他埋点见组件Demo
+如
+
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+```
+
+埋点如下
+
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+  {
+      [[ALComponentManager sharedManager] triggerEvent:ALSetupEvent];
+      [[ALComponentManager sharedManager] triggerEvent:ALInitEvent];
+
+      dispatch_async(dispatch_get_main_queue(), ^{
+          [[ALComponentManager sharedManager] triggerEvent:ALSplashEvent];
+      });
+  #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 100000
+      if ([UIDevice currentDevice].systemVersion.floatValue >= 10.0f) {
+          [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+      }
+  #endif
+      return YES;
+  }
+```
 	
-3. 给每个组件创建一个类并写上注解，如`ALComponentA.m`
+其他埋点见组件Demo
+	
+#### 给每个组件创建组件管理类
+
+1. 给每个组件创建一个类并写上注解，如`ALComponentA.m`
 
 	```
 	@ALMod(ALComponentA);
@@ -55,7 +83,7 @@ pod 'ALComponentManager'
 	@end
 	```
 	
-4. 实现协议`ALComponentProtocol`和需要的协议方法。
+2. 实现协议`ALComponentProtocol`和需要的协议方法。
 	这个协议里面蕴含了基本所有的`AppDelegate`方法，当然要触发这些方法都是要预先在AppDelegate写上埋点。
 	
 	```
@@ -82,8 +110,7 @@ pod 'ALComponentManager'
 	@end
 	```
 	
-4. 接下来你就可以尝试使用了。
-
+3. 接下来你就可以尝试使用了。
 
 ## Author
 
