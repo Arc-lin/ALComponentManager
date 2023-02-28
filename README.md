@@ -13,7 +13,7 @@ pod 'ALComponentManager'
 
 ## 使用方法
 
-相关内容可以阅读[文档](https://blog.arclin.cn/post/7e5c9fa9.html)
+相关内容可以阅读[文档](https://www.arclin.cn/post/7e5c9fa9.html)
 
 ### 使用方法
 
